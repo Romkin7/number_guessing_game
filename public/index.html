@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Numeropeli</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="dist/css/styles.css">  
+    </head>
+    <body>
+        <div class="svg-wrapper">
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape" height="60" width="320" />
+              <div class="text">Numeropeli</div>
+            </svg>
+        </div>
+        <form id="lomake" class="display-none">
+      		<label for="luku">Arvaa luku väliltä 0-100</label>
+		      <input id="luku" type="number" name="luku" min="0" max="100" autocomplete="off">
+	      </form>
+        <p id="alempi"></p>
+        <p id="ylempi"></p>
+        <p id="arvaustenMaara"></p>
+        <p id="vihje"></p>
+        <div id="numerot"></div>
+        <button type="button" id="start_resetBtn">Aloita Peli</button>
+        <div class="bar-chart display-none">
+          <div class="bar" id="lower-bar" style="width: 0%; background-color: blue">
+            <span></span></div>
+          <div class="bar" id="middle-bar" style="width: 100%; background-color: orange">
+            <span></span></div>
+          <div class="bar" id="upper-bar" style="width: 0  %; background-color: green">
+            <span></span></div>
+        </div>
+        <script src="dist/js/app.js"></script>
+    </body>
+  </html>

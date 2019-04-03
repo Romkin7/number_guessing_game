@@ -1,0 +1,96 @@
+.svg-wrapper {
+  position: relative;
+  transform: translateY(-10%);
+	margin: 0 auto;
+  width: 100%;  
+}
+.shape {
+  fill: transparent;
+  stroke: #19f6e8;
+  border-bottom: 5px solid black;
+  animation: 2.5s fullShape 0s infinite;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  font-size: 2.1rem;
+  line-height: 1.5em;;
+  letter-spacing: 8px;
+  color: #fff;
+  top: -60px;
+  position: relative;
+}
+@keyframes fullShape {
+  100% {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  } 
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+}
+form {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+label, input {
+  font-size: 1.5rem;
+  letter-spacing: 1.1px;
+}
+input {
+  outline: none;
+  padding: 3rem;
+  border-radius: 75%;
+  width: 47%;
+  background-color: rgba(255,255,255,0.2);
+  border: white 2px ridge;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+p, #numerot {
+  margin-bottom: 0.6rem;
+}
+#alempi {
+  margin-top: 0.6rem;
+}
+#numerot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bar-chart {
+  display: flex;
+  background-color: #eee;
+  width: 600px;
+  height: 30px;
+  align-items: stretch;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+}
+.display-none {
+  display: none;
+}
+button {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1em;
+  letter-spacing: 1px;
+  color: #ffffff;
+  border: 0.06rem solid #fbc211;
+  background-color: #fbc211;
+  padding: 1.3rem;
+}
